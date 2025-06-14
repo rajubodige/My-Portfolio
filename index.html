@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raju Bodige Personal Portfolio  </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png"  class="logo">
+                    <ul id="sidemenu">
+                         <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                        <li><a href="#header">Home</a></li>
+                         <li><a href="#about">About</a></li>
+                          <li><a href="#services">Services</a></li>
+                           <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                           
+                    </ul>
+
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web developer</p>
+                    <h1>Hi, I'm <span>Raju Bodige</span></h1>
+
+                </div>
+            </div>
+        </div>
+        <!------------about------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I’m Raju Bodige!
+I’m a passionate and curious learner with a background in Computer Science Engineering. I have knowledge in Java, Python, AWS, DevOps, HTML, CSS, JavaScript, and Cybersecurity. I enjoy solving problems, learning new technologies, and building practical solutions. I’m currently looking to grow and build my career as a Software Engineer.
+
+</p>
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+    <p class="tab-links"  onclick="opentab('Education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="Skills">
+    <ul>
+        <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+        <li><span>Aws DevOps</span><br>Deploying and Automation Cloud Infrastructure</li>
+       <li><span>Java Developer</span><br>Building Scalable Backend Applications</li>
+        <li><span>Cyber Security</span><br>Protecting Systems from Threats and Vulnerbilities</li>
+    </ul>
+</div>
+<div class="tab-contents" id="Education">
+    <ul>
+        <li><span>Btech</span><br>2024<br>Indur Institute Of Engineering And technology Siddipet<br>Computer Science Engineering</li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------services----------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div class="services">
+                        <i class="fas fa-code fa-3x"></i>
+                        <h2>web Design</h2>
+                        <p>Creating clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript.</p>
+<a href="#">Learn more</a>
+                    </div>
+                    <div class="services">
+                        <i class="fas fa-cloud fa-3x"></i>
+                        <h2>AWS DevOps Automation</h2>
+                        <p>Streamlining workflows and automating deployments with cloud and DevOps tools.</p>
+<a href="#">Learn more</a>
+                    </div>
+                    <div class="services">
+                        <i class="fas fa-shield-halved fa-3x"></i>
+                        <h2>Cyber Security</h2>
+                        <p>Exploring system security, threat detection, and best practices to build safer digital environments.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-----------portfolio------->
+         <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work-item">
+                        <img src="images/Screenshot 2025-06-13 230510.png" alt="Screenshot 2025-06-13 230510.png">
+                        <div class="layer">
+                            <h3>This Portfolio website<span class="badge"><br>You're here!</span></h3>
+                            <p>This entire website was built by me using only HTML, CSS, and JavaScript. It's fully responsive and designed to showcase my skills as a fresher web developer</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+         </div>
+         <!---------contact------>
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>rajubodige09@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>9100841658</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/bodige-raju-184417303?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BPujUEvu2RGWpfWNC1moksw%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                             <a href="https://www.instagram.com/raju_bodige.09?igsh=ZGI5MG0zM3B2cnNh&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                              <a href="https://github.com/rajubodige" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="cv-box">
+                        <a href="images/BODIGE RAJU.pdf" class="btn btn2" download>Download CV</a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ raju bodige.<i class="fa-solid fa-heart"></i></p>
+            </div>
+         </div>
+         
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+             var tabcontents = document.getElementsByClassName("tab-contents");
+             function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+             }
+             event.currentTarget.classList.add("active-link");
+             document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+                 function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+    // Automatically close sidemenu when a link is clicked (for mobile)
+    document.querySelectorAll("#sidemenu a").forEach(link => {
+        link.addEventListener("click", () => {
+            closemenu();
+        });
+    });
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwoBKG6-uQqhnLn1H_hHAGRfxhYxs54-EGPGTtXSWhdYQpeMInzzkZEqQJfpStvdGuDeg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    </body>
+</html> 
